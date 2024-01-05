@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/services.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <title>Your Fun Site</title>
+</head>
+<body>
+    <main>        
+        <header>
+            <nav class="navbar">
+                <a href="#" class="navbar__logo">Logo</a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Services</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Contact</a></li>
+                </ul>
+                <button class="navbar__toggle" aria-label="Toggle Navigation">
+                    <span class="navbar__icon"></span>
+                </button>
+            </nav>            
+            <div class="header">
+                <h1 class="header__title">POP UP!</h1>
+                <p class="header__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus
+                    quibusdam tempora quisquam quos optio laborum voluptatibus nesciunt! Reiciendis et,
+                    nihil assumenda minus dolorum nemo necessitatibus facere. Repudiandae, asperiores quasi?
+                </p>
+                <button type="button" class="header__button">
+                    Try now!
+                </button>
+            </div>
+        </header>
+        <section class="about">
+            <h2 class="about__title">About us</h2>
+            <p class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, eum! Temporibus ipsa
+                mollitia ducimus eligendi aperiam deleniti dolore odio placeat, ab nostrum et itaque nobis,
+                sed quis culpa eum! In? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, eum! Temporibus ipsa
+                mollitia ducimus eligendi aperiam deleniti dolore odio placeat, ab nostrum et itaque nobis,
+                sed quis culpa eum! In?
+            </p>
+        </section>
+        <section class="services">
+            <h2 class="services__title">Services</h2>
+            
+            <div class="services__card-container">
+                <div class="services__card">
+                    <img src="./assets/images/square.png" alt="Service 1" class="services__image">
+                    <h3 class="services__name">Service 1</h3>
+                    <button class="services__button">Go in</button>
+                </div>
+                    <div class="services__card">
+                    <img src="./assets/images/amongus.png" alt="Service 2" class="services__image">
+                    <h3 class="services__name">Service 2</h3>
+                    <button class="services__button">Go in</button>
+                </div>
+                    <div class="services__card">
+                    <img src="./assets/images/round.png" alt="Service 3" class="services__image">
+                    <h3 class="services__name">Service 3</h3>
+                    <button class="services__button">Go in</button>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__info">
+                <h2 class="contact__title">Contact</h2>
+                <p class="contact__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor praesentium est rerum hic, 
+                    eum blanditiis ea maxime, quisquam doloribus neque tenetur voluptas quas odit sed? Deserunt fugit
+                    recusandae libero isteLorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor praesentium est rerum hic, 
+                    eum blanditiis ea maxime, quisquam doloribus neque tenetur voluptas quas odit sed? Deserunt fugit
+                    recusandae libero iste.</p>
+            </div>
+            <img src="./assets/images/photo.jpg" class="contact__image" alt="photo">
+        </section>
+        <footer class="footer">
+            <div class="footer__names">
+                <span class="footer__name">Name 1</span>
+                <span class="footer__name">Name 2</span>
+                <span class="footer__name">Name 3</span>
+                <span class="footer__name">Name 4</span>
+                <span class="footer__name">Name 5</span>
+            </div>
+        </footer>
+    </main>
+    <script>
+        const toggleButton = document.querySelector('.navbar__toggle');
+        const menu = document.querySelector('.navbar__menu');
+
+        toggleButton.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

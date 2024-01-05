@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1000px 350px 500px 600px 100px;
+    height: auto;
+}
+
+@media screen and (max-width: 690px) {
+    main {
+        grid-template-rows: auto;
+    }
+}

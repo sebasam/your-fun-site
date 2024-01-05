@@ -1,0 +1,26 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer__names {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__name {
+    font-size: 1em;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+.footer__names {
+    flex-direction: column;
+}
+
+.footer__name {
+    margin-bottom: 10px;
+}
+}

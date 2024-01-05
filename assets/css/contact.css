@@ -1,0 +1,46 @@
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-image: url("./../images/bg-grid.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact__info {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.contact__title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact__text {
+    margin-bottom: 20px;
+}
+
+.contact__image {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact__info,
+    .contact__image {
+        flex: auto;
+        max-width: 100%;
+    }
+}
